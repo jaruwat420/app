@@ -1,3 +1,13 @@
+<?php require('library/database.php'); ?>
+
+
+
+<?php
+$sql = "SELECT * FROM tbl_user";
+$result = mysqli_query($connect, $sql);
+$row = mysqli_fetch_array($result);
+echo $row["user_name"]
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +19,9 @@
 </head>
 
 <body>
-    <h2>awdas</h2>
+    <div class="container">
+        <label for="">name</label>
+    </div>
 </body>
 
 </html>
